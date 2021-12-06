@@ -1,0 +1,37 @@
+@import "./variables";
+
+/*INDEX - SECCIÓN 1*/
+.hero {
+    background-image: url(../media/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin: 0;
+    padding-top: 12rem;
+    animation-name: aparicion-hero;
+    animation-duration: 3s;
+    @keyframes aparicion-hero {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    &__container {
+        padding: 1.25rem;
+        text-align: center;
+    }
+    &__title {
+        color: $blue;
+        font-size: 2.5rem;
+    }
+}
+
+/*INDEX - SECCIÓN 2*/
+.product-title{
+    padding-top: 1rem;
+}
+.description{
+    text-align: center;
+}

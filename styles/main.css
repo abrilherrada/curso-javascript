@@ -1,0 +1,159 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  color: #1C3144;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr auto;
+      grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+a {
+  color: #1C3144;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #1C3144;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Mali', cursive;
+  font-style: normal;
+  font-weight: 700;
+}
+
+h1 {
+  color: #1C3144;
+}
+
+h2 {
+  color: #E63946;
+  text-align: center;
+}
+
+h3 {
+  color: #1C3144;
+  text-align: left;
+}
+
+h4 {
+  color: #A8DADC;
+}
+
+/*MENÚ DE NAVEGACIÓN*/
+.logo {
+  width: 12rem;
+}
+
+nav.navbar-light {
+  background-color: rgba(255, 255, 255, 0.911);
+}
+
+nav.navbar-light .navbar-nav .nav-link.active {
+  color: #E63946;
+  margin: 0rem 1.5rem;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+nav.navbar-light .navbar-nav .nav-link:hover {
+  color: #A8DADC;
+}
+
+header {
+  font-size: 1.5rem;
+  z-index: 2;
+}
+
+/*INDEX - SECCIÓN 1*/
+.hero {
+  background-image: url(../media/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin: 0;
+  padding-top: 12rem;
+  -webkit-animation-name: aparicion-hero;
+          animation-name: aparicion-hero;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+@-webkit-keyframes aparicion-hero {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes aparicion-hero {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.hero__container {
+  padding: 1.25rem;
+  text-align: center;
+}
+
+.hero__title {
+  color: #1C3144;
+  font-size: 2.5rem;
+}
+
+/*INDEX - SECCIÓN 2*/
+.product-title {
+  padding-top: 1rem;
+}
+
+.description {
+  text-align: center;
+}
+
+/*FOOTER*/
+.footer {
+  margin-top: 1rem;
+  background-color: #A8DADCa1;
+}
+
+.footer__logo {
+  padding-bottom: 1rem;
+}
+
+.footer__contacto {
+  margin: 0rem 1rem;
+}
+
+.footer__contacto a {
+  text-decoration: none;
+}
+
+.footer__icono {
+  font-size: 1.25rem;
+  margin: 0.5rem;
+}
+
+.footer__info {
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+/*# sourceMappingURL=main.css.map */

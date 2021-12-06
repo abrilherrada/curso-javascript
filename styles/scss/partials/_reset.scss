@@ -1,0 +1,44 @@
+@import "./variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    color: $blue;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+a {
+    color: $blue;
+    text-decoration: none;
+}
+a:hover {
+    color: $blue;
+}
+h1, h2, h3, h4 {
+    font-family: 'Mali', cursive;
+    font-style: normal;
+    font-weight: 700;
+}
+h1 {
+    color: $blue;
+}
+h2 {
+    color: $red;
+    text-align: center;
+}
+h3 {
+    color: $blue;
+    text-align: left;
+}
+h4 {
+    color: $lightblue;
+}
